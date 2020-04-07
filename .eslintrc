@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "twilio-ts"
+  ],
+  "rules": {
+    "import/no-unused-modules": "off",
+    "prefer-named-capture-group": "off"
+  }
+}

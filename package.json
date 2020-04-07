@@ -1,0 +1,51 @@
+{
+  "name": "@k88/format-webpack-massages",
+  "version": "1.0.4",
+  "description": "Formats Webpack error messages",
+  "keywords": [
+    "format webpack message",
+    "webpack error",
+    "webpack warning",
+    "webpack"
+  ],
+  "homepage": "https://github.com/ktalebian/format-webpack-massages#readme",
+  "bugs": {
+    "url": "https://github.com/ktalebian/format-webpack-massages/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktalebian/format-webpack-massages.git"
+  },
+  "license": "ISC",
+  "author": "Kousha Talebian <k@ousha.me>",
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "prebuild": "rm -rf build",
+    "build": "tsc",
+    "lint": "eslint --ext ts src/",
+    "lint:fix": "npm run lint -- --fix",
+    "prepublish:public": "npm run build",
+    "publish:public": "npm publish --access public"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "dependencies": {
+    "chalk": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-twilio-ts": "^1.22.0",
+    "husky": "^4.2.3",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
+  },
+  "reveal": true
+}
