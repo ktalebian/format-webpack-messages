@@ -1,12 +1,12 @@
 {
   "name": "@k88/format-webpack-massages",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "Formats Webpack error messages",
   "keywords": [
     "format webpack message",
+    "webpack",
     "webpack error",
-    "webpack warning",
-    "webpack"
+    "webpack warning"
   ],
   "homepage": "https://github.com/ktalebian/format-webpack-massages#readme",
   "bugs": {
