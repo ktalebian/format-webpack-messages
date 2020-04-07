@@ -1,5 +1,5 @@
 {
-  "name": "@k88/format-webpack-massages",
+  "name": "@k88/format-webpack-messages",
   "version": "1.0.0",
   "description": "Formats Webpack error messages",
   "keywords": [
@@ -8,13 +8,13 @@
     "webpack error",
     "webpack warning"
   ],
-  "homepage": "https://github.com/ktalebian/format-webpack-massages#readme",
+  "homepage": "https://github.com/ktalebian/format-webpack-messages#readme",
   "bugs": {
-    "url": "https://github.com/ktalebian/format-webpack-massages/issues"
+    "url": "https://github.com/ktalebian/format-webpack-messages/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ktalebian/format-webpack-massages.git"
+    "url": "git+https://github.com/ktalebian/format-webpack-messages.git"
   },
   "license": "ISC",
   "author": "Kousha Talebian <k@ousha.me>",
