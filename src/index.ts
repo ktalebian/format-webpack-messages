@@ -102,7 +102,7 @@ const format = (message: string): string => {
   return message.trim();
 };
 
-export default (messages: WebpackMessages) => {
+export default (messages: WebpackMessages): WebpackMessages => {
   const result = {
     errors: messages.errors.map(format),
     warnings: messages.warnings.map(format),
