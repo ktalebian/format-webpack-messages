@@ -18,7 +18,7 @@ const isSyntaxError = (message: string) => message.indexOf(friendlySyntaxErrorLa
  * @param message {String}
  * @return String
  */
-const format = (message: string): string => {
+var format = function (message) {
   message = message.message;
   var lines = message.split('\n');
 
