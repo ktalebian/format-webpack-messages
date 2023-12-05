@@ -19,7 +19,8 @@ const isSyntaxError = (message: string) => message.indexOf(friendlySyntaxErrorLa
  * @return String
  */
 const format = (message: string): string => {
-  let lines = message.split('\n');
+  message = message.message;
+  var lines = message.split('\n');
 
   /*
    * Strip webpack-added headers off errors/warnings
