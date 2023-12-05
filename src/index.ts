@@ -20,7 +20,19 @@ const isSyntaxError = (message: string) => message.indexOf(friendlySyntaxErrorLa
  */
 var format = function (message) {
   message = message.message;
-  var lines = message.split('\n');
+  let lines = [];
+
+  if (typeof message === 'string') {
+    lines = message.split('\n');
+  } else if ('message' in message) {
+    lines = message['message'].split('\n');
+  } else if (Array.isArray(message)) {
+    message.forEach(message => {
+      if ('message' in message) {
+        lines = message['message'].split('\n');
+      }
+    });
+  }
 
   /*
    * Strip webpack-added headers off errors/warnings
