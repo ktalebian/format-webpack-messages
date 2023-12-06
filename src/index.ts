@@ -14,22 +14,21 @@ const friendlySyntaxErrorLabel = 'Syntax error:';
 const isSyntaxError = (message: string) => message.indexOf(friendlySyntaxErrorLabel) !== -1;
 
 /**
- * Formats the webpack message
- * @param message {String}
+ * Formats the webpack messages
+ * @param messages
  * @return String
  */
-var format = function (message) {
-  message = message.message;
+const format = function (message) {
   let lines = [];
 
   if (typeof message === 'string') {
     lines = message.split('\n');
   } else if ('message' in message) {
-    lines = message['message'].split('\n');
+    lines = message.message.split('\n');
   } else if (Array.isArray(message)) {
-    message.forEach(message => {
+    message.forEach((message) => {
       if ('message' in message) {
-        lines = message['message'].split('\n');
+        lines = message.message.split('\n');
       }
     });
   }
